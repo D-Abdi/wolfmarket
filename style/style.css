@@ -22,7 +22,6 @@ body h1 {
 }
 /*Text bij de wolf*/
 header h1 {
-    margin: 0;
     margin: auto 0;
     color: white;
 }
@@ -168,7 +167,19 @@ a:link, a:visited {
 @media screen and (max-width: 650px) {
     .workfoto, .awardfoto {
         height: auto;
+
+    }
+    .container-1 {
+        padding: 50px 40px 50px 30px;;
+
     }
 
-    .container-1
+    .container-2 {
+        padding: 50px 30px;
+
+    }
+
+    .container-3 {
+        padding: 50px 30px 50px 30px;
+    }
 }
