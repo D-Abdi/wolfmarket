@@ -1,0 +1,100 @@
+<?php
+    include_once 'includes/dbh.php';
+
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>[Broker site]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<header class="navbar">
+    <img src="style/logo2.png" alt="Mozaik van de kop van een wolf" class="navfoto">
+    <h1>Wolf Market</h1>
+</header>
+<div class="headtext">
+    <h1>Ben jij het nieuwe talent wat we zoeken?</h1>
+    <button id="scrollToBottomBtn">
+        <h2>Klik hier</h2>
+    </button>
+</div>
+
+<body>
+
+    <div class="mainbody">
+        <div class="container-1">
+            <img src="style/award.png" alt="Een krans met ons logo erin" class="awardfoto">
+            <div class="wie?">
+                <h1>Wie zijn wij? </h1>
+                <p>Wolf Market is een van de top makelaarskantoren gevestigd in Cyprus. Door jaren aan ervaring in
+                    cryptovaluta en een zeer gevariëerd team, is Wolf Market in het afgelopen decennia uit gegroeid tot
+                    een van de grootste crypto handelaren.
+                    Onze snelle groei biedt ons nu ook de mogelijkheid om vestigingen in Nederland te openen. Daarom
+                    zijn wij op zoek naar echte sales tijgers die het fundament zullen zetten en de hoogte van de lat
+                    zullen bepalen. </p>
+            </div>
+            <div>
+                <h1>Wij zorgen voor het begin</h1>
+                <ul>
+                    <li>Alle benodigdheden voor het starten van je eigen team.</li>
+                    <li>Software services en website development.</li>
+                    <li>Sales trainingen voor het aantrekken van nieuwe klanten.</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="container-2">
+
+            <img src="style/officework.jpg" alt="Mensen die werken in een kantoor" class="workfoto">
+
+            <div class="c2-tekst">
+
+                <h1>Verschillende software services en oplossingen, ontwikkeld door ons </h1>
+                <p>We hebben aanbiedingen voor zowel beginnende, als ervaren effectenhandelaren: Wolf Market Trading
+                    Platform, websites, mobiele applicaties en betalingsmethodes. </p>
+                <h1>Ontmoet onze specialisten persoonlijk</h1>
+                <p>Na het invullen van ons contact formulier nemen wij telefonisch contact met je op. Na een kort
+                    babbeltje over jou motivatie, komt een afspraak tot stand om op de koffie te komen.
+                    Hier geven wij een presentatie over de programma's die wij aanbieden. Privacy gegarandeerd. Wanneer
+                    we tot een overeenkomst komen, lanceren we een vestiging in slechts <strong>2 maanden</strong> tijd.
+                </p>
+
+            </div>
+        </div>
+        <div class="container-3">
+
+            <h1 id="contact">Contact</h1>
+            <p>Vul het onderstaande formulier in. Wij zullen zo spoedig mogelijk telefonisch contact met u opnemen.</p>
+            <br>
+
+            <form action="includes/contact.php" method="POST">
+                <label>Uw naam</label><br><br>
+                <input type="text" name="naam" value="">
+                <br><br>
+                <label>Telefoon nummer</label><br><br>
+                <input type="tel" name="telefoon" value="" pattern="[0-9]{10}">
+                <br><br>
+                <label>E-mail</label><br><br>
+                <input type="email" name="email" value="">
+                <br><br>
+                <label>Wanneer zouden we contact met u kunnen opnemen?</label><br><br>
+                <textarea name="afspraak" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" name="submit" value="Verstuur" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+<footer>
+    <img src="style/logo2.png" alt="Mozaik van de kop van een wolf" class="footerfoto">
+    <p>&copy; Wolf Market 2019</p>
+</footer>
+<script src="main.js"></script>
+</html>
