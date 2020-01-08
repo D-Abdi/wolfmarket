@@ -1,6 +1,6 @@
 <?php
     include_once 'includes/dbh.php';
-
+    include_once 'includes/validation.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@
         <div class="container-1">
             <img src="style/award.png" alt="Een krans met ons logo erin" class="awardfoto">
             <div class="wie?">
-                <h1>Wie zijn wij? test</h1>
+                <h1>Wie zijn wij?</h1>
                 <p>Wolf Market is een van de top makelaarskantoren gevestigd in Cyprus. Door jaren aan ervaring in
                     cryptovaluta en een zeer gevariëerd team, is Wolf Market in het afgelopen decennia uit gegroeid tot
                     een van de grootste crypto handelaren.
@@ -41,7 +41,7 @@
                     zijn wij op zoek naar echte sales tijgers die het fundament zullen zetten en de hoogte van de lat
                     zullen bepalen. </p>
             </div>
-            <div>
+            <div class="begin">
                 <h1>Wij zorgen voor het begin</h1>
                 <ul>
                     <li>Alle benodigdheden voor het starten van je eigen team.</li>
@@ -77,16 +77,16 @@
 
             <form action="includes/contact.php" method="POST">
                 <label>Uw naam</label><br><br>
-                <input type="text" name="naam" value="">
+                <input type="text" name="naam" value="" maxlength="20" required>
                 <br><br>
                 <label>Telefoon nummer</label><br><br>
-                <input type="tel" name="telefoon" value="" pattern="[0-9]{10}">
+                <input type="tel" name="telefoon" value="" pattern="[0-9]{12}" maxlength="12" required>
                 <br><br>
                 <label>E-mail</label><br><br>
-                <input type="email" name="email" value="">
+                <input type="email" name="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="50" required>
                 <br><br>
                 <label>Wanneer zouden we contact met u kunnen opnemen?</label><br><br>
-                <textarea name="afspraak" rows="4" cols="50"></textarea><br><br>
+                <textarea name="afspraak" rows="4" cols="50" pattern="[a-zA-Z0-9._%+-]" maxlength="120" required></textarea><br><br>
                 <input type="submit" name="submit" value="Verstuur" id="submit">
             </form>
         </div>

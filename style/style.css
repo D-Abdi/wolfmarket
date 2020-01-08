@@ -167,6 +167,7 @@ a:link, a:visited {
 @media screen and (max-width: 650px) {
     .workfoto, .awardfoto {
         height: auto;
+        margin-bottom: 50px;
 
     }
     .container-1 {
@@ -181,5 +182,9 @@ a:link, a:visited {
 
     .container-3 {
         padding: 50px 30px 50px 30px;
+    }
+
+    footer {
+        padding: 0 0 0 30px;
     }
 }

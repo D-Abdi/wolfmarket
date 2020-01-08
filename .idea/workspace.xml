@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9917aae0-4d79-4f26-b905-00bcc3c0e7f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/includes/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,6 +26,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1W1IXbcFR9EO0Yi8U2hi6OF9SOj" />
   <component name="PropertiesComponent">
@@ -62,8 +66,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578310714625</updated>
-      <workItem from="1578310716129" duration="4552000" />
+      <workItem from="1578310716129" duration="11492000" />
     </task>
+    <task id="LOCAL-00001" summary="New media Querry's have been added.">
+      <created>1578317697967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578317697967</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,5 +91,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New media Querry's have been added." />
+    <option name="LAST_COMMIT_MESSAGE" value="New media Querry's have been added." />
   </component>
 </project>
