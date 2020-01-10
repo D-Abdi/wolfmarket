@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9917aae0-4d79-4f26-b905-00bcc3c0e7f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Daniel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/reset-password.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/welcome.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/admin.style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/welcome.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/reset-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/reset-password.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/welcome.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/admin.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/admin.style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../logintest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hsrotterdam" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -55,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\brokersite\wolfmarket\admin" />
       <recent name="C:\xampp\htdocs\brokersite\wolfmarket\includes" />
       <recent name="C:\xampp\htdocs\brokersite\wolfmarket\style" />
     </key>
@@ -85,7 +86,8 @@
       <workItem from="1578573516372" duration="7098000" />
       <workItem from="1578604959664" duration="442000" />
       <workItem from="1578653054950" duration="326000" />
-      <workItem from="1578653420847" duration="3945000" />
+      <workItem from="1578653420847" duration="10569000" />
+      <workItem from="1578690494369" duration="6662000" />
     </task>
     <task id="LOCAL-00001" summary="New media Querry's have been added.">
       <created>1578317697967</created>

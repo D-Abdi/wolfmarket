@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    padding: 8px
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

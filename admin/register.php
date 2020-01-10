@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "dbh.php";
+require_once "../includes/dbh.php";
 
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
