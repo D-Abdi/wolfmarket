@@ -103,7 +103,6 @@ a:link, a:visited {
       float: left;
   }
 
- 
 
   /* footer moet nog onderaan blijven!  */
   footer {
@@ -212,3 +211,8 @@ a:link, a:visited {
     }
 }
 
+/* welcome.php styling */
+.wrapper{
+    width: 350px; padding: 20px;
+    font: 14px sans-serif;
+}
