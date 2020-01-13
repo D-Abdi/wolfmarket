@@ -124,6 +124,10 @@ a:link, a:visited {
       padding: 30px 0 10px 0;
   }
 
+  #submit {
+      outline-style: none;
+  }
+
   #submit:visited, #submit {
     background-color: orange;
     color: white;
@@ -133,6 +137,7 @@ a:link, a:visited {
     display: inline-block;
     border-radius: 10px;
     border: none;
+
   }
 
   #submit:hover, #submit:active {

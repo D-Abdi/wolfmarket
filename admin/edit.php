@@ -1,43 +1,21 @@
 <?php
 require_once '../includes/dbh.php';
 
-
-
-if (isset($_POST['submit'])) {
-    $id =  mysqli_real_escape_string($conn, $_POST['id']);
-    $naam =  mysqli_real_escape_string($conn, $_POST['naam']);
-    $telefoon =  mysqli_real_escape_string($conn, $_POST['telefoon']);
-    $email =  mysqli_real_escape_string($conn, $_POST['email']);
-    $afspraak =  mysqli_real_escape_string($conn, $_POST['afspraak']);
-
-}
-
-require_once '../includes/validation.php';
-
-//    $reserveringen = [
-//    'naam' => $naam,
-//    'telefoon' => $telefoon,
-//    'email' => $email,
-//    'afspraak' => $afspraak
-//
-//];
-
-$query = "UPDATE reservering 
-          SET naam = '$naam', telefoon = '$telefoon', email = '$email', afspraak = '$afspraak'
-          WHERE id = '$id'";
-
-
-if(isset($_GET['id'])) {
+if(isset($_GET['id']) && ctype_digit($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "SELECT * FROM reservering WHERE id = " . mysqli_escape_string($conn, $id);
-    $result = mysqli_query($conn, $query);
-    if(mysqli_num_rows($result) == 1)
-    {
-        $album = mysqli_fetch_assoc($result);
-    }
+
+} else {
+    header("location: ../admin/welcome.php");
 }
 
-mysqli_close($conn);
+$sql= "SELECT * FROM reservering WHERE id = $id";
+$result = mysqli_query($conn, $sql);
+$reserveringen = mysqli_fetch_assoc($result);
+
+/* Redirect naar Home pagina als er geen rijen zijn met hetzelfde id */
+if(mysqli_num_rows($result) == 0) {
+    header("location: ../admin/welcome.php");
+}
 
 
 
@@ -54,22 +32,23 @@ mysqli_close($conn);
 
 <div>
 
-    <form action="" method="POST">
+    <form action="../includes/edit.php" method="POST">
         <div class="data-field">
-            <label for="naam">Naam</label>
-            <input type="text" name="naam" placeholder="<?= $reserveringen['naam'] ?>"><br><br>
+            <label for="naam">Naam</label><br><br>
+            <input type="text" name="naam" value="<?= $reserveringen['naam'] ?>"><br><br>
         </div>
         <div class="data-field">
-            <label for="telefoon">Telefoon</label>
-            <input type="tel" name="telefoon" placeholder="<?= $reserveringen['telefoon'] ?>"><br><br>
+            <label for="telefoon">Telefoon</label><br><br>
+            <input type="tel" name="telefoon" value="<?= $reserveringen['telefoon'] ?>"><br><br>
         </div>
         <div class="data-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="<?= $reserveringen['email'] ?>"><br><br>
+            <label for="email">Email</label><br><br>
+            <input type="email" name="email" value="<?= $reserveringen['email'] ?>"><br><br>
         <div class="data-field">
-            <label for="naam">Afspraak</label>
-            <textarea class="textarea" name="afspraak" rows="4" cols="50" pattern="[a-zA-Z0-9._%+-]" maxlength="120" placeholder="<?= $reserveringen['afspraak'] ?>"></textarea><br><br>
-            <input type="submit" name="submit" value="Update" id="submit">
+            <label for="afspraak">Afspraak</label><br><br>
+            <textarea class="textarea" name="afspraak" rows="4" cols="50" maxlength="120" ><?= $reserveringen['afspraak'] ?></textarea><br><br>
+            <input type="hidden" name="id" value="<?= $reserveringen['id'] ?>"/>
+            <input type="submit" name="submit" value="Edit" id="submit">
         </div>
     </form>
 </div>

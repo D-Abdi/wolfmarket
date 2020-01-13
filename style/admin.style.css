@@ -2,10 +2,31 @@ body {
     text-align: center;
 }
 
+.header {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#table-body {
+    background-color: darkslategray;
+    font-family: 'Lora', sans-serif;
+
+}
+
+
 table {
     margin: 0 auto;
     border-collapse: collapse;
     width: 60%;
+    color: #C3C4C4;
+}
+
+th {
+    background-color: #191919;
+}
+
+td {
+    background-color: #282E2E;
 }
 
 th, td {
@@ -13,5 +34,70 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #54717C;
+    color: #C3C4C4;
+}
+
+/* Login in en Reset password schermen */
+
+#login-body {
+    background-color: darkslategray;
+}
+
+.box {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 40px;
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    color: white;
+    border-radius: 5%;
+
+}
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box input[type = "text"], input[type = "password"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus, input[type = "password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box input[type = "submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover {
+    border-color: #2ecc71;
 }

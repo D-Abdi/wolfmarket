@@ -96,25 +96,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link href="../style/admin.style.css" type="text/css" rel="stylesheet">
 
 </head>
-<body>
-<div class="wrapper">
-    <h2>Login</h2>
-    <p>Please fill in your credentials to login.</p>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+<body id="login-body">
+
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="box">
+        <h1>Log in</h1>
         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-            <label>Username</label>
-            <input type="text" name="username" value="<?php echo $username; ?>">
+            <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Username">
             <span class="help-block"><?php echo $username_err; ?></span>
         </div>
         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-            <label>Password</label>
-            <input type="password" name="password">
+            <input type="password" name="password" placeholder="Password">
             <span class="help-block"><?php echo $password_err; ?></span>
         </div>
         <div class="form-group">
             <input type="submit" value="Login">
         </div>
-        <p>Don't have an account ? <a href="register.php">Sign up now</a>.</p>
     </form>
 </div>
 </body>

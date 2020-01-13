@@ -27,7 +27,7 @@ mysqli_close($conn);
     <title>Welcome</title>
     <link href="../style/admin.style.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body id="table-body">
 <div class="header">
     <h1>Administrator</h1>
     <h2>Ingelogd als <?php echo htmlspecialchars($_SESSION["username"]); ?></h2>
@@ -41,11 +41,13 @@ mysqli_close($conn);
         <th>E-mail</th>
         <th>Afspraak</th>
         <th>Geplaatst op</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     </thead>
     <tfoot>
     <tr>
-        <td colspan="6">&copy; Aanvragen voor een afspraak</td>
+        <td colspan="8">&copy; Aanvragen voor een afspraak</td>
     </tr>
     </tfoot>
     <tbody>
@@ -57,8 +59,8 @@ mysqli_close($conn);
         <td><?= $reservering['email']?></td>
         <td><?= $reservering['afspraak']?></td>
         <td><?= $reservering['datum']?></td>
-        <td><a href="edit.php?id=<?= $reservering['id'] ?>">Edit</a></td>
-        <td><a href="delete.php?id=<?= $reservering['id'] ?>">delete</a></td>
+        <td class="edit"><a href="edit.php?id=<?= $reservering['id'] ?>">Edit</a></td>
+        <td class="delete"><a href="delete.php?id=<?= $reservering['id'] ?>">Delete</a></td>
     </tr>
     <?php } ?>
     </tbody>
