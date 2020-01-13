@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9917aae0-4d79-4f26-b905-00bcc3c0e7f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/reset-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/reset-password.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/welcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/dbh.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/dbh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/admin.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/admin.style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +27,17 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,17 +45,22 @@
   </component>
   <component name="ProjectId" id="1W1IXbcFR9EO0Yi8U2hi6OF9SOj" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hsrotterdam" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\brokersite\wolfmarket\admin" />
+      <recent name="C:\xampp\htdocs\brokersite\wolfmarket\includes" />
       <recent name="C:\xampp\htdocs\brokersite\wolfmarket\style" />
     </key>
   </component>
@@ -66,7 +86,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578310714625</updated>
-      <workItem from="1578310716129" duration="11492000" />
+      <workItem from="1578310716129" duration="21677000" />
+      <workItem from="1578573516372" duration="7098000" />
+      <workItem from="1578604959664" duration="442000" />
+      <workItem from="1578653054950" duration="326000" />
+      <workItem from="1578653420847" duration="10569000" />
+      <workItem from="1578690494369" duration="7112000" />
+      <workItem from="1578733722033" duration="3503000" />
+      <workItem from="1578903914385" duration="19687000" />
     </task>
     <task id="LOCAL-00001" summary="New media Querry's have been added.">
       <created>1578317697967</created>
@@ -86,7 +113,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

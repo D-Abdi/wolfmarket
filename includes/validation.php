@@ -1,6 +1,11 @@
 <?php
 include_once 'dbh.php';
-include_once 'contact.php';
+
+$naam = mysqli_real_escape_string($conn, $_POST['naam']);
+$telefoon = mysqli_real_escape_string($conn,$_POST['telefoon']);
+$email = mysqli_real_escape_string($conn,$_POST['email']);
+$afspraak = mysqli_real_escape_string($conn,$_POST['afspraak']);
+
 
 $errors = [];
 

@@ -103,7 +103,6 @@ a:link, a:visited {
       float: left;
   }
 
- 
 
   /* footer moet nog onderaan blijven!  */
   footer {
@@ -125,6 +124,10 @@ a:link, a:visited {
       padding: 30px 0 10px 0;
   }
 
+  #submit {
+      outline-style: none;
+  }
+
   #submit:visited, #submit {
     background-color: orange;
     color: white;
@@ -134,6 +137,7 @@ a:link, a:visited {
     display: inline-block;
     border-radius: 10px;
     border: none;
+
   }
 
   #submit:hover, #submit:active {
@@ -212,3 +216,8 @@ a:link, a:visited {
     }
 }
 
+/* welcome.php styling */
+.wrapper{
+    width: 350px; padding: 20px;
+    font: 14px sans-serif;
+}
