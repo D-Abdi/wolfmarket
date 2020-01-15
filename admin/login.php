@@ -1,5 +1,4 @@
 <?php
-// Initialize the session
 session_start();
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -8,10 +7,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     exit;
 }
 
-// Include config file
 require_once "../includes/dbh.php";
 
-// Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
 

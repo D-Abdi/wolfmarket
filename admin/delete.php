@@ -2,20 +2,36 @@
 require_once '../includes/dbh.php';
 
 if(isset($_GET['id']) && ctype_digit($_GET['id'])) {
-    $id = $_GET['id'];
+    $id = mysqli_escape_string($conn, $_GET['id']);
+
+    $sql = "SELECT * FROM reservering WHERE id = $id; ";
+    $result = mysqli_query($conn, $sql);
+
+    $reserveringen = mysqli_fetch_assoc($result);
+
+    mysqli_close($conn);
+
+    /* Antoine vragen over de prepared statements */
+//    if ($sql = $conn->prepare( "SELECT * FROM reservering WHERE id = ?")) {
+//        $sql->bind_param("i", $id);
+//        if ($sql->execute()) {
+//
+//            $sql->bind_result($reserveringen);
+//            while ($sql->fetch()) {
+//                printf ("%s \n", $reserveringen);
+//            }
+//        }
+//        $sql->close();
+//    }
+//    $conn->close();
 
 } else {
-    header("location: ../admin/welcome.php");
+    exit;
+     header("location: ../admin/welcome.php");
 }
 
-$sql= "SELECT * FROM reservering WHERE id = $id";
-$result = mysqli_query($conn, $sql);
-$reserveringen = mysqli_fetch_assoc($result);
 
-/* Redirect naar Home pagina als er geen rijen zijn met hetzelfde id */
-if(mysqli_num_rows($result) == 0) {
-    header("location: ../admin/welcome.php");
-}
+
 
 ?>
 
