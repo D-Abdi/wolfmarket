@@ -27,12 +27,14 @@ if(mysqli_num_rows($result) == 0) {
     <meta charset="UTF-8">
     <title>Welcome</title>
     <link href="../style/admin.style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
 <div>
 
-    <form action="../includes/edit.php" method="POST">
+    <form action="../includes/edit.php" method="POST" class="edit-form">
         <div class="data-field">
             <label for="naam">Naam</label><br><br>
             <input type="text" name="naam" value="<?= $reserveringen['naam'] ?>"><br><br>

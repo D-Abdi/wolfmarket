@@ -57,9 +57,18 @@ a:link, a:visited {
     border-radius: 10px;
   }
 
+
   a:hover, a:active {
     background-color: orangered;
   }
+
+
+ /* List item styling */
+
+.list {
+    margin-left: 10px;
+}
+
 
   .mainbody {
       font-family: 'Montserrat', serif;

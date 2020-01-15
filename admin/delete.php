@@ -25,14 +25,17 @@ if(mysqli_num_rows($result) == 0) {
     <meta charset="UTF-8">
     <title>Delete - <?= $reserveringen['naam'] ?></title>
     <link href="../style/admin.style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<h2>Delete - <?= $reserveringen['naam'] ?></h2>
-<form action="../includes/delete.php" method="post">
+<div class="delete-form">
+<form action="../includes/delete.php" method="post" >
     <p> Weet u zeker dat u de reservering van "<?=  $reserveringen['naam']?>" wilt verwijderen?</p>
     <input type="hidden" name="id" value="<?= $reserveringen['id'] ?>"/>
     <input type="submit" name="submit" value="Verwijderen"/>
 </form>
+</div>
 </body>
 </html>
 
