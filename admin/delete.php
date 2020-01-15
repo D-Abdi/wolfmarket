@@ -14,8 +14,8 @@ if(isset($_GET['id']) && ctype_digit($_GET['id'])) {
     /* Antoine vragen over de prepared statements */
 
 } else {
-    exit;
      header("location: ../admin/welcome.php");
+     exit;
 }
 
 
