@@ -12,18 +12,6 @@ if(isset($_GET['id']) && ctype_digit($_GET['id'])) {
     mysqli_close($conn);
 
     /* Antoine vragen over de prepared statements */
-//    if ($sql = $conn->prepare( "SELECT * FROM reservering WHERE id = ?")) {
-//        $sql->bind_param("i", $id);
-//        if ($sql->execute()) {
-//
-//            $sql->bind_result($reserveringen);
-//            while ($sql->fetch()) {
-//                printf ("%s \n", $reserveringen);
-//            }
-//        }
-//        $sql->close();
-//    }
-//    $conn->close();
 
 } else {
     exit;
