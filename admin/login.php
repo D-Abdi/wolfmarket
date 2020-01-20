@@ -1,5 +1,4 @@
 <?php
-// Initialize the session
 session_start();
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -8,10 +7,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     exit;
 }
 
-// Include config file
 require_once "../includes/dbh.php";
 
-// Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
 
@@ -94,6 +91,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Login</title>
     <link href="../style/admin.style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body id="login-body">

@@ -1,48 +1,41 @@
-body {
-    text-align: center;
-}
 
 .header {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#table-body {
-    background-color: darkslategray;
-    font-family: 'Lora', sans-serif;
-
+    font-family: 'lora', sans-serif;
+    text-align: center;
 }
 
 
 table {
+    font-family: 'Lora', sans-serif;
     margin: 0 auto;
-    border-collapse: collapse;
     width: 60%;
-    color: #C3C4C4;
+    text-align: center;
+    border-spacing: unset;
+}
+
+p {
+    text-align: center;
 }
 
 th {
-    background-color: #191919;
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
 }
 
 td {
-    background-color: #282E2E;
+    padding: 10px;
 }
 
 th, td {
-    padding: 8px
+    border-bottom: 1px solid #ddd;
 }
 
 tr:nth-child(even) {
-    background-color: #54717C;
-    color: #C3C4C4;
+    background-color: #f2f2f2;
 }
 
 /* Login in en Reset password schermen */
-
-#login-body {
-    background-color: darkslategray;
-}
 
 .box {
     font-family: 'Montserrat', sans-serif;
@@ -59,6 +52,7 @@ tr:nth-child(even) {
 
 }
 .box h1 {
+    text-align: center;
     color: white;
     text-transform: uppercase;
     font-weight: 500;
@@ -100,4 +94,93 @@ tr:nth-child(even) {
 
 .box input[type = "submit"]:hover {
     border-color: #2ecc71;
+}
+
+/* Edit en delete knop */
+
+.edit-delete a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 7px 25px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.edit-delete a:hover {
+    border-color: #2ecc71;
+}
+
+/* Edit page en delete page */
+
+.edit-form datalist, .delete-form  {
+    font-family: 'Lora', sans-serif;
+}
+
+.delete-form {
+    display: block;
+    margin: 200px auto 0 auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.edit-form {
+    display: block;
+    margin: 120px auto 0 auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.edit-form input[type = "submit"], .delete-form input[type = "submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.edit-form input[type = "submit"]:hover, .delete-form input[type = "submit"]:hover {
+    background: #2ecc71;
+    border-color: #2ecc71;
+}
+
+
+.rpassword a, .logout a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    background-color: #3498db;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 140px;
+    padding: 10px;
+}
+
+.rpassword a:hover, .logout a:hover {
+    background: #2ecc71;
 }
