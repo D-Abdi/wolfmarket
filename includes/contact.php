@@ -14,4 +14,12 @@ $sql->bind_param("ssss", $naam, $telefoon, $email, $afspraak);
 $sql->execute();
 $sql->close();
 $conn->close();
+
+$to = "$email";
+$subject = "Afspraak bevestiging Wolffmarket";
+$txt = "Bedankt voor het maken van een afspraak. Wij zullen op de gewenste datum contact met u opnemen.";
+$headers = "From: no-reply@wolfmarket.com" . "\r\n";
+
+mail($to,$subject,$txt,$headers);
+
 header("location: ../index.html?verzonden!");
