@@ -2,20 +2,22 @@
 require_once '../includes/dbh.php';
 
 if(isset($_GET['id']) && ctype_digit($_GET['id'])) {
-    $id = $_GET['id'];
+    $id = mysqli_escape_string($conn, $_GET['id']);
+
+    $sql= "SELECT * FROM reservering WHERE id = '$id'";
+    $result = mysqli_query($conn, $sql);
+    $reserveringen = mysqli_fetch_assoc($result);
+
+    /* Redirect naar Home pagina als er geen rijen zijn met hetzelfde id */
+    if(mysqli_num_rows($result) == 0) {
+        header("location: ../admin/welcome.php");
+    }
+
 
 } else {
     header("location: ../admin/welcome.php");
 }
 
-$sql= "SELECT * FROM reservering WHERE id = $id";
-$result = mysqli_query($conn, $sql);
-$reserveringen = mysqli_fetch_assoc($result);
-
-/* Redirect naar Home pagina als er geen rijen zijn met hetzelfde id */
-if(mysqli_num_rows($result) == 0) {
-    header("location: ../admin/welcome.php");
-}
 
 
 
